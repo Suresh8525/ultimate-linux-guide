@@ -1,3 +1,27 @@
+| Command                          | Description                                                            |
+| -------------------------------- | ---------------------------------------------------------------------- |
+| `useradd <user>`                 | Add a new user (non-interactive, low-level).                           |
+| `adduser <user>`                 | Add a new user interactively (Debian/Ubuntu wrapper around `useradd`). |
+| `usermod -l <newname> <oldname>` | Rename a user account.                                                 |
+| `usermod -d /new/home <user>`    | Change the user’s home directory.                                      |
+| `usermod -s /bin/bash <user>`    | Change the user’s default shell.                                       |
+| `usermod -aG <group> <user>`     | Add a user to a supplementary group.                                   |
+| `usermod -L <user>`              | Lock a user account (disable login).                                   |
+| `usermod -U <user>`              | Unlock a user account.                                                 |
+| `userdel <user>`                 | Delete a user account (keeps home directory by default).               |
+| `userdel -r <user>`              | Delete a user **and** remove their home directory & mail spool.        |
+| `passwd <user>`                  | Set or change a user’s password.                                       |
+| `passwd -l <user>`               | Lock the user’s password (disable password login).                     |
+| `passwd -u <user>`               | Unlock the user’s password.                                            |
+| `chage -l <user>`                | Show password aging info (expiry date, etc.).                          |
+| `chage -E <date> <user>`         | Set account expiration date.                                           |
+| `chfn <user>`                    | Change user’s full name or finger information.                         |
+| `id <user>`                      | Display user ID (UID), group ID (GID), and groups.                     |
+| `whoami`                         | Show the current logged-in username.                                   |
+| `su - <user>`                    | Switch to another user account (load environment).                     |
+| `sudo -i -u <user>`              | Start an interactive shell as another user.                            |
+| `last`                           | Show last login history.                                               |
+
 # User Management in Linux
 
 ## Introduction to User Management in Linux
