@@ -22,6 +22,43 @@
 | `sudo -i -u <user>`              | Start an interactive shell as another user.                            |
 | `last`                           | Show last login history.                                               |
 
+Group Management Commands
+| Command                             | Description                                                     |
+| ----------------------------------- | --------------------------------------------------------------- |
+| `groupadd <group>`                  | Create a new group.                                             |
+| `addgroup <group>`                  | Interactive group creation (Debian/Ubuntu wrapper).             |
+| `groupdel <group>`                  | Delete a group.                                                 |
+| `groupmod -n <newgroup> <oldgroup>` | Rename a group.                                                 |
+| `groups <user>`                     | Show the groups a user belongs to.                              |
+| `gpasswd -a <user> <group>`         | Add a user to a group.                                          |
+| `gpasswd -d <user> <group>`         | Remove a user from a group.                                     |
+| `gpasswd <group>`                   | Set or change group password / manage group admins.             |
+| `newgrp <group>`                    | Switch to a different group temporarily in the current session. |
+| `getent group`                      | Display all groups (from `/etc/group` or directory service).    |
+
+System Files Related to User & Group Management
+| File              | Description                                             |
+| ----------------- | ------------------------------------------------------- |
+| `/etc/passwd`     | Stores user account info (UID, GID, home, shell, etc.). |
+| `/etc/shadow`     | Stores encrypted passwords and password aging info.     |
+| `/etc/group`      | Stores group info and group memberships.                |
+| `/etc/gshadow`    | Stores secure group account information.                |
+| `/etc/skel/`      | Default files copied to a new user’s home directory.    |
+| `/etc/login.defs` | Default user and password configuration.                |
+
+Bonus Utilities
+| Command         | Description                                   |
+| --------------- | --------------------------------------------- |
+| `finger <user>` | Display detailed user info (if installed).    |
+| `who`           | Show who is currently logged in.              |
+| `w`             | Show logged-in users and what they are doing. |
+| `lastlog`       | Show last login for all users.                |
+| `getent passwd` | Display all system users.                     |
+| `getent group`  | Display all system groups.                    |
+
+
+
+
 # User Management in Linux
 
 ## Introduction to User Management in Linux
